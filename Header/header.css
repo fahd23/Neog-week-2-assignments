@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+main {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 70%;
+  height: 200px;
+  overflow-y: auto;
+}
+/* color */
+.bg-violet {
+  background: blueviolet;
+}
+.header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-header {
+  display: flex;
+  margin-left: auto;
+}
+.header-btn {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
+.header-title {
+  font-size: 1.4rem;
+}
+.header-btn:hover {
+  background: rgb(161, 60, 255);
+  border-radius: 50%;
+}
+
+.body p {
+  padding: 0.5rem 1rem;
+}
+
+/* Fixed Top App Bar  */
+.fixed-header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.header-short {
+  display: flex;
+  border-radius: 0 0 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  max-width: 100px;
+  padding: 5px;
+}

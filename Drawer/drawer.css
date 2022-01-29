@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #9c48eb;
+  --secdonary-color: #dcdcdc;
+  --background-color: #f6ebff;
+  --white-color: #f7f7f7;
+  --black-color: #141414;
+}
+body {
+  font-family: sans-serif;
+  background: var(--beckground-color);
+  height: 200vh;
+}
+h4 {
+  font-weight: 250;
+}
+p {
+  padding: 0.5rem;
+}
+.drawer-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  margin: 2rem auto;
+  background-color: var(--white-color);
+}
+
+.drawer {
+  width: 250px;
+  margin: 2rem auto;
+  background: var(--white-color);
+}
+.drawer-header {
+  padding: 1rem;
+  padding-bottom: 5px;
+}
+.nav-tab {
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black-color);
+  gap: 1.5rem;
+}
+.nav-tab:hover {
+  background: rgb(239, 223, 255);
+}
+a.nav-tab.highlight {
+  background-color: rgb(210, 161, 255);
+  color: rgb(76, 32, 117);
+}
+/* Permanent Drawer */
+.header {
+  padding: 1rem;
+  width: 100%;
+  background: var(--primary-color);
+}
+.body {
+  overflow-y: auto;
+}
+.p-aside-drawer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+.aside {
+  height: 230px;
+  background: var(--white-color);
+}
+/* Dismissible Drawer */
+.dismissible {
+  display: none;
+}
+.md-dismissible {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.drawer-hide {
+  display: none;
+}
