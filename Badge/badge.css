@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+:root {
+  --primary-color: #8e15ff;
+  --secdonary-color: #e6e6e6;
+  --background-color: #f7f3fa;
+  --violet-color: #ead3ff;
+  --pink-color: #ff69b4;
+  --red-color: #ff0e1a;
+  --blue-color: #3943ff;
+  --black-color: #464646;
+}
+main {
+  width: 30%;
+  min-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--violet-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div {
+  margin: 2rem;
+}
+.heading {
+  width: 15%;
+  font-size: 1.5rem;
+  margin: 3rem auto;
+  margin-bottom: 0;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+.text {
+  display: inline;
+}
+.badge1 {
+  position: absolute;
+  top: -11px;
+  right: -19px;
+  background: var(--blue-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: whitesmoke;
+  font-size: 13px;
+}
+.badge2 {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  background: var(--red-color);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--background-color);
+  /* font-weight: bold; */
+}
+.badge3 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--background-color);
+  font-size: 13px;
+  font-weight: bold;
+}
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.action-btn {
+  background: var(--blue-color);
+  color: var(--background-color);
+  font-size: 14px;
+}
+.badge4 {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: var(--blue-color);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--background-color);
+  font-size: 13px;
+  font-weight: bold;
+}
+.hide-btn {
+  background: white;
+  color: black;
+  font-size: 14px;
+  box-shadow: 5px 5px 10px rgb(151 140 140);
+}
+.badge5 {
+  position: absolute;
+  right: -13px;
+  top: -13px;
+  background: var(--red-color);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--background-color);
+  font-size: 13px;
+  font-weight: bold;
+}
+.hide-badge {
+  display: none;
+}

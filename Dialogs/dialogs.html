@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialogs Components</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dialogs.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="display-btn-container">
+        <button class="display-btns">ALERT</button>
+        <button class="display-btns">SIMPLE</button>
+        <button class="display-btns">CONFIRM</button>
+      </div>
+      <!-- alert -->
+      <div class="dialog-container alert">
+        <h2 class="title">Dialog body text</h2>
+        <p>Discard draft?</p>
+        <div class="simple-action-btn action-btns">
+          <button class="btn">CANCEL</button>
+          <button class="btn">DISCARD</button>
+        </div>
+      </div>
+      <!-- simple -->
+      <div class="dialog-container simple">
+        <h2 class="title">Dialog header</h2>
+        <div class="dialog-content">
+          <ul>
+            <li class="tab">
+              <span>
+                <i class="fas fa-user-circle avatar"></i>
+              </span>
+              <span>Item 1</span>
+            </li>
+            <li class="tab">
+              <span>
+                <i class="fas fa-user-circle avatar"></i>
+              </span>
+              <span>Item 2</span>
+            </li>
+            <li class="tab">
+              <span>
+                <i class="fas fa-user-circle avatar"></i>
+              </span>
+              <span>Item 3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- confirmation -->
+      <div class="dialog-container confirmation">
+        <h2 class="title">Dialog header</h2>
+        <div class="dialog-content radio-content">
+          <span class="radio-btn">
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label>
+          </span>
+          <span class="radio-btn">
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label>
+          </span>
+          <span class="radio-btn">
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+          </span>
+          <span class="radio-btn">
+            <input
+              type="radio"
+              id="python"
+              name="fav_language"
+              value="python"
+            />
+            <label for="python">Python</label>
+          </span>
+          <span class="radio-btn">
+            <input type="radio" id="react" name="fav_language" value="react" />
+            <label for="react">React</label>
+          </span>
+        </div>
+        <div class="confirm-action-btn action-btns">
+          <button class="btn">CONFIRM</button>
+          <button class="btn">CANCEL</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="dialogs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #7a0bc0;
+  --secondary-color: #f3f3f3;
+  --background-color: #ead0ff;
+  --grey-color: #757575;
+}
+body {
+  font-family: sans-serif;
+  background: var(--background-color);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display-btn-container {
+  margin: 2rem;
+  width: 350px;
+  height: 100px;
+  background: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+}
+.display-btns {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.title {
+  padding: 1rem 1rem 0;
+}
+.dialog-container {
+  position: relative;
+  margin: 1rem;
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+.alert {
+  width: 250px;
+  height: 130px;
+  line-height: 1.6rem;
+}
+.alert p {
+  padding: 10px 1rem;
+  color: rgb(95, 95, 95);
+}
+.simple-action-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.action-btns {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.btn:hover {
+  background: var(--background-color);
+  border-radius: 4px;
+}
+/* simple */
+.simple {
+  padding: 0 10px 10px;
+  width: 250px;
+  max-height: 270px;
+}
+.simple h2 {
+  margin-bottom: 3px;
+}
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+.tab {
+  display: flex;
+  gap: 10px;
+}
+.tab:hover {
+  background: var(--background-color);
+  border-radius: 4px;
+}
+li {
+  width: 100%;
+  height: 65px;
+  list-style-type: none;
+  padding: 1rem 10px;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 2.3rem;
+  color: var(--grey-color);
+}
+/* confirmation */
+
+.confirmation {
+  width: 250px;
+  max-height: 250px;
+}
+.confirmation h2 {
+  line-height: 2.5rem;
+  border-bottom: 2px solid var(--background-color);
+}
+.radio-content {
+  overflow-y: auto;
+  height: 130px;
+}
+.radio-btn {
+  padding: 14px;
+}
+.confirm-action-btn {
+  margin-top: 10px;
+}
