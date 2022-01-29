@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #9c48eb;
+  --secdonary-color: #dcdcdc;
+  --background-color: #f6ebff;
+  --violet-color: #c281ff;
+  --pink-color: #ff69b4;
+  --red-color: #ff0e1a;
+  --blue-color: #8489f5;
+  --black-color: #464646;
+}
+body {
+  font-family: sans-serif;
+}
+.main {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 80%;
+  background: var(--background-color);
+  border-radius: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  border-bottom: solid var(--primary-color);
+  font-size: 16px;
+}
+.output {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50px;
+}
+
+.chips {
+  margin: 5px;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 10px 15px;
+  max-width: 300px;
+}
+.icon {
+  padding-left: 5px;
+  font-size: 16px;
+}
+.icon-bg-none {
+  background: transparent;
+  border: none;
+}
+/* Basic chips */
+
+.basic-chips {
+  margin: 2rem auto;
+  width: 80%;
+  border: 5px solid var(--secdonary-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+/* chips with actions */
+
+.chips-with-actions {
+  margin: 2rem auto;
+  width: 80%;
+  border: 5px solid var(--secdonary-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+/* Stacked chips */
+.stacked-chips {
+  margin: 2rem auto;
+  width: 80%;
+  border: 5px solid var(--secdonary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/* background color */
+
+.chips-bg-violet {
+  background: var(--violet-color);
+}
+
+.chips-bg-red {
+  background: var(--red-color);
+}
+.chips-bg-blue {
+  background: var(--blue-color);
+}
+.chips-bg-pink {
+  background: var(--pink-color);
+}
+.chips-bg-gray {
+  background: var(--background-color);
+}
+.chips-bg-white {
+  border: 1px solid var(--black-color);
+}
